@@ -28,9 +28,9 @@ a:hover, a:focus {
     color: #185b33;
 }
 
-header {
-    
-
+header h1 img {
+    width: 210px;
+    height: 50px;
 }
 
 .navbar {
@@ -619,8 +619,9 @@ body#sitetop {
 
 #top-news {
     padding: 3em 0;
-    background: #2E3B53;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    background: url(<$mt:BlogRelativeURL$>images/bg_02.jpg) repeat scroll;
 }
 
 #top-news h3 {
@@ -797,13 +798,6 @@ footer .col-sm-6 {
 }
 
  /*ここから追記*/   
-
-
-    
-    
-    
-    
-    
     
     
 }
@@ -841,6 +835,16 @@ table.price_web th.over_tit {
     display: none;
 }
 
+    #mainvisual-lower h2 {
+    margin: 0;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+#mainvisual-lower h2 i {
+    padding-right: 10px;
+    font-size: 24px;
+}
 
 
     
@@ -932,6 +936,25 @@ table.price_web td {
 
 span.h4_mar {
     margin-left: 5px;
+}
+
+h4.plan {
+    font-size: 0.9em;
+}
+
+i.det_tit {
+    color: #1c70ba;
+}
+
+span.q {
+    quotes: '"' '"' ; 
+}
+
+q:before {
+content: open-quote;
+}
+q:after {
+content: close-quote;
 }
 
 
