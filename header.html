@@ -1,7 +1,8 @@
 <header class="navbar">
   <div class="container">
-    <h1 class="navbar-header">
-      <a href="<$mt:BlogRelativeURL$>" class="brand"><img class="logo_posi" src="<$mt:BlogRelativeURL$>images/logo.svg"></a>
+        <h1 class="navbar-header">
+
+      <a href="<$mt:BlogRelativeURL$>" class="brand"><img itemprop="image" class="logo_posi" src="<$mt:BlogRelativeURL$>images/logo.svg"></a>
       <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button"><i class="fa fa-list"></i></button>
     </h1>
     <nav class="navbar-collapse collapse navbar-right">
@@ -46,7 +47,9 @@
         </li>
         </mt:TopLevelFolders>
         <mt:Pages no_folder="1" sort_order="descend" field:footer_menu="0">
+        <mt:If tag="CustomFieldValue" identifier="nomenu" ne="1">
         <li><a href="<$mt:PagePermalink$>"><$mt:PageTitle encode_html="1"$></a></li>
+         </mt:If>
         </mt:Pages>
       </ul>
     </nav>
